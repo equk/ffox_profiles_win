@@ -32,6 +32,14 @@ The script uses hardlinks to fix the issue in Windows 10 where you cannot pin fi
 
 With this script you can have a pinned shortcut on the start menu & the taskbar for each profile.
 
+## Screenshot
+
+![](![](https://raw.githubusercontent.com/equk/ffox_profiles_win/master/screenshots/ffox_win_profile.jpg)
+
+multiple profiles pinned to taskbar:
+
+![](https://raw.githubusercontent.com/equk/ffox_profiles_win/master/screenshots/taskbar_pin.jpg)
+
 ### userChrome.css styles
 
 * move find bar to top
