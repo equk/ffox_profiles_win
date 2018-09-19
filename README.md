@@ -31,3 +31,12 @@ creation of new profiles with:
 The script uses hardlinks to fix the issue in Windows 10 where you cannot pin firefox more than once.
 
 With this script you can have a pinned shortcut on the start menu & the taskbar for each profile.
+
+### userChrome.css styles
+
+* move find bar to top
+* move find to right styled as a dropdown
+* add padding to items on bookmarks bar
+* change folder icon in bookmarks to adwaita
+
+The default path for created profiles is `My Documents\ffox_profiles`
