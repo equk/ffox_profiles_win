@@ -40,6 +40,9 @@
  * Enable U2F (FIDO) Authentication
  * user_pref("security.webauth.u2f", true);
  *
+ * Disable Ugly URL Bar Zoom
+ * user_pref("browser.urlbar.update1",false);
+ *
  * Enable Darkmode (prefers-color-scheme)
  * user_pref("ui.systemUsesDarkTheme", 1);
  *
@@ -79,3 +82,5 @@ user_pref("privacy.trackingprotection.enabled",true);
 user_pref("privacy.donottrackheader.enabled",true);
 user_pref("network.trr.mode", 5);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites",false);
+user_pref("browser.urlbar.update1",false);
