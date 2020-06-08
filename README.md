@@ -1,6 +1,6 @@
-# ffox_profiles_win
+# 🦊 ffox_profiles_win
 
-firefox profiles with security presets & userchrome styles on windows
+Firefox profiles with security presets & userchrome styles on windows
 
 ## Summary
 
@@ -20,13 +20,16 @@ Pin shortcuts to each profile to the start menu / taskbar
 
 ## Features
 
-creation of new profiles with:
+Creation of new profiles with:
 
-* security & privacy related settings
-* custom style overrides
-* use RAM for caching
-* custom find (top-right drop-down)
-* shortcut to each profile
+- [x] Security & Privacy Related Settings Pre-Set
+- [x] Find At Top Of Screen
+- [x] RAM Caching Enabled
+- [x] Adwaita Folder Icon
+- [x] Bookmark Bar Spacing
+- [x] Disable Ugly `urlbar` Zoom (firefox >75)
+- [x] Disable Ugly Drop Shadow On Search
+- [x] Shortcut to Each Profile
 
 The script uses hardlinks to fix the issue in Windows 10 where you cannot pin firefox more than once.
 
@@ -42,9 +45,10 @@ multiple profiles pinned to taskbar:
 
 ### userChrome.css styles
 
-* move find bar to top
-* move find to right styled as a dropdown
-* add padding to items on bookmarks bar
-* change folder icon in bookmarks to adwaita
+- [x] move find bar to top
+- [x] add padding to items on bookmarks bar
+- [x] change folder icon in bookmarks to adwaita
+- [x] Disable Ugly `urlbar` Zoom (firefox >75)
+- [x] Disable Ugly Drop Shadow On Search
 
 The default path for created profiles is `My Documents\ffox_profiles`
