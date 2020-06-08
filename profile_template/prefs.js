@@ -39,6 +39,12 @@
  * Enable U2F (FIDO) Authentication
  * user_pref("security.webauth.u2f", true);
  *
+ * Enable Darkmode (prefers-color-scheme)
+ * user_pref("ui.systemUsesDarkTheme", 1);
+ *
+ * Set DevTools Dark Theme
+ * user_pref("devtools.theme", "dark");
+ *
  */
 
 user_pref("browser.cache.disk.capacity", 358400);
