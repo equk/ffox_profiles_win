@@ -78,3 +78,4 @@ user_pref("network.http.referer.spoofSource",true);
 user_pref("privacy.trackingprotection.enabled",true);
 user_pref("privacy.donottrackheader.enabled",true);
 user_pref("network.trr.mode", 5);
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
