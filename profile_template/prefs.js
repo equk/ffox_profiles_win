@@ -25,6 +25,7 @@
  *                  + Enable Tracking Protection
  *                  + Always Send Do Not Track
  *                  + Disable DoH (DNS-over-HTTPS)
+ *                  + Disable Pocket Recommendations on New Tabs
  */
 
 /*
@@ -57,11 +58,14 @@ user_pref("network.cookie.cookieBehavior", 1);
 user_pref("privacy.firstparty.isolate",true);
 user_pref("network.cookie.thirdparty.sessionOnly",true);
 user_pref("pdfjs.disabled", true);
+user_pref("app.normandy.enabled", false);
+user_pref("network.gio.supported-protocols", "");
 user_pref("browser.cache.memory.enable", true);
 user_pref("browser.cache.memory.max_entry_size", -1);
 user_pref("signon.rememberSignons", false);
 user_pref("network.prefetch-next", false);
 user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
 user_pref("geo.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
@@ -75,12 +79,23 @@ user_pref("media.navigator.enabled",false);
 user_pref("beacon.enabled",false);
 user_pref("dom.event.clipboardevents.enabled",false);
 user_pref("intl.locale.matchOS",false);
+user_pref("browser.fixup.alternate.enabled", false);
+user_pref("browser.urlbar.trimURLs", false);
 user_pref("toolkit.telemetry.enabled",false);
 user_pref("toolkit.telemetry.unified",false);
-user_pref("network.http.referer.spoofSource",true);
+user_pref("browser.ping-centre.telemetry", false);
 user_pref("privacy.trackingprotection.enabled",true);
 user_pref("privacy.donottrackheader.enabled",true);
 user_pref("network.trr.mode", 5);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
-user_pref("browser.newtabpage.activity-stream.feeds.topsites",false);
 user_pref("browser.urlbar.update1",false);
+user_pref("extensions.pocket.enabled", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "{}");
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
