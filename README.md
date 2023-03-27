@@ -6,15 +6,27 @@ Firefox profiles with security presets & userchrome styles on windows
 
 The purpose of this project is to provide a way to create new firefox profiles with security & privacy settings already preset.
 
-It also includes some style customizations using userChrome.css.
+It also includes some style customizations using `userChrome.css`.
+
+## Why Make This Script?
+
+*Mozilla Firefox has a profile manager in windows but doesn't create shortcuts for each profile & expects users to use the profile launcher to select each time.*
+
+This script creates profiles & shortcuts for each making it easier for users.
+
+It also uses the same preset settings & userChrome styles for each.
 
 ## Usage
 
 Clone or download this repo
 
-Edit `ffox_profiles.ps1` & add profiles you require to the profiles array
+Edit `ffox_profiles.ps1` & add profiles you require to the `profiles` array
 
-Run the script as an administrator
+Optionally you may also want to change the `profilepath` variable (default is $mydocs\ffox_profiles)
+
+Run the script
+
+*script creates shortcuts & opens folder so u can pin them*
 
 Pin shortcuts to each profile to the start menu / taskbar
 
@@ -25,30 +37,27 @@ Creation of new profiles with:
 - [x] Security & Privacy Related Settings Pre-Set
 - [x] Find At Top Of Screen
 - [x] RAM Caching Enabled
-- [x] Adwaita Folder Icon
+- [x] Sandbox Check (user namespaces kernel setting)
+- [x] Auto Update Profile Preferences
 - [x] Bookmark Bar Spacing
 - [x] Disable Ugly `urlbar` Zoom (firefox >75)
 - [x] Disable Ugly Drop Shadow On Search
-- [x] Shortcut to Each Profile
-
-The script uses hardlinks to fix the issue in Windows 10 where you cannot pin firefox more than once.
+- [x] Disable Search Suggestions
+- [x] Disable Sponsored Suggestions
+- [x] Restore Old Square Tabs
+- [x] Smaller Tab Density
+- [x] Cleaner Image Context Menu
+- [x] Smaller Bookmark Menu Spacing
+- [x] Custom Folder Icons
 
 With this script you can have a pinned shortcut on the start menu & the taskbar for each profile.
 
-## Screenshots
+## Screenshot
 
 ![](https://raw.githubusercontent.com/equk/ffox_profiles_win/master/screenshots/ffox_win_profile.jpg)
 
-multiple profiles pinned to taskbar:
-
-![](https://raw.githubusercontent.com/equk/ffox_profiles_win/master/screenshots/taskbar_pin.jpg)
-
-### userChrome.css styles
-
-- [x] move find bar to top
-- [x] add padding to items on bookmarks bar
-- [x] change folder icon in bookmarks to adwaita
-- [x] Disable Ugly `urlbar` Zoom (firefox >75)
-- [x] Disable Ugly Drop Shadow On Search
+## Notes
 
 The default path for created profiles is `My Documents\ffox_profiles`
+
+*Hardlinks are no longer used as pinning now works on Windows 10*
