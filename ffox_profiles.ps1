@@ -1,5 +1,4 @@
 #requires -version 5.0
-#requires -runasadministrator
 
 <#
 .SYNOPSIS
@@ -7,7 +6,6 @@
 .DESCRIPTION
     Setup Multiple Firefox Profiles in Windows
     Create new firefox profiles with security & privacy settings already preset
-    Requires Admin Access
     Twitter: @equilibriumuk
 .NOTES
     File Name      : ffox_profiles.ps1
