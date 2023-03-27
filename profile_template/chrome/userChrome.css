@@ -39,6 +39,11 @@ toolbarbutton.bookmark-item {
 
 /* fixes for firefox >92 */
 
+/* Square Dropdown */
+menupopup {
+    --panel-border-radius: 0px !important;
+}
+
 /* Bookmarks menu spacing */
 menupopup>menuitem,
 menupopup>menu {
