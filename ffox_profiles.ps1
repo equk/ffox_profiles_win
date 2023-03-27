@@ -56,19 +56,12 @@ foreach ($profile in $profiles) {
         }
         cp $profile_template\chrome\userChrome.css $profilepath\$profile\chrome\userChrome.css
     }
-    if(-Not (Test-Path -Path "$ffox_install\firefox_$profile.exe" )){
-        Write-Host "!> No existing HardLink not found for $profile"
-        Write-Host "+> Creating HardLink from firefox.exe to firefox_$profile.exe"
-        cd $ffox_install
-        New-Item -ItemType HardLink -Name "firefox_$profile.exe" -Value "firefox.exe"
-        cd $script_pwd
-    }
     if(-Not (Test-Path -Path "$profilepath\firefox_$profile.lnk" )){
         Write-Host "!> No existing Shortcut not found for $profile"
         Write-Host "+> Creating Shortcut to firefox_$profile.exe"
         $WshShell = New-Object -comObject WScript.Shell
         $Shortcut = $WshShell.CreateShortcut("$profilepath\firefox_$profile.lnk")
-        $Shortcut.TargetPath = "$ffox_install\firefox_$profile.exe"
+        $Shortcut.TargetPath = "$ffox_install\firefox.exe"
         $Shortcut.Arguments = "--profile $profilepath\$profile -no-remote"
         $Shortcut.WorkingDirectory = "$ffox_install"
         $Shortcut.Save()
