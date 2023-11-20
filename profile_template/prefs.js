@@ -24,7 +24,6 @@
  *                  + Disable Mozilla telemetry
  *                  + Enable Tracking Protection
  *                  + Always Send Do Not Track
- *                  + Disable DoH (DNS-over-HTTPS)
  *                  + Disable Pocket Recommendations on New Tabs
  *                  + Disable remote url for google safebrowsing checking downloads
  *                  + Display language as en-US for all users (fingerprinting)
@@ -126,7 +125,6 @@ user_pref("network.gio.supported-protocols", "");
 user_pref("network.http.referer.spoofSource",false);
 user_pref("network.http.referer.XOriginPolicy", 1);
 user_pref("network.prefetch-next", false);
-user_pref("network.trr.mode", 5);
 user_pref("pdfjs.disabled", true);
 user_pref("pdfjs.enableScripting", false);
 user_pref("privacy.donottrackheader.enabled",true);
