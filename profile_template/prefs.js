@@ -22,6 +22,7 @@
  *                  + Disable clipboard event detection
  *                  + Disable matchos for locale
  *                  + Disable Mozilla telemetry
+ *                  + Disable Firefox Health Reports
  *                  + Enable Tracking Protection
  *                  + Always Send Do Not Track
  *                  + Disable Pocket Recommendations on New Tabs
@@ -59,6 +60,30 @@
  * Force HTTPS Only
  * (breaks mixed content & http sites)
  * user_pref("dom.security.https_only_mode", true);
+ *
+ * Force DoH (DNS-over-HTTPS)
+ * user_pref("network.trr.mode", 3);
+ * Use Custom DoH Server
+ * user_pref("network.trr.custom_uri", "https://cusom-server-uri/dns-query")
+ * user_pref("network.trr.uri", "https://cusom-server-uri/dns-query");
+ *
+ */
+
+/*
+ * Clear Everything On Closing Browser
+ * -----------------------------------
+ *
+ * This can be useful for a testing profile
+ *
+ * user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+ *
+ * user_pref("privacy.clearOnShutdown.cache", true);
+ * user_pref("privacy.clearOnShutdown.cookies", true);
+ * user_pref("privacy.clearOnShutdown.downloads", true);
+ * user_pref("privacy.clearOnShutdown.formdata", true);
+ * user_pref("privacy.clearOnShutdown.history", true);
+ * user_pref("privacy.clearOnShutdown.offlineApps", true);
+ * user_pref("privacy.clearOnShutdown.sessions", true);
  *
  */
 
@@ -102,6 +127,8 @@ user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.urlbar.update1",false);
 user_pref("browser.urlbar.groupLabels.enabled",false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("dom.event.clipboardevents.enabled",false);
 user_pref("dom.network.enabled",false);
 user_pref("dom.security.https_first",true);
